@@ -1,0 +1,85 @@
+body {
+    margin: auto;
+    text-align: center;
+    font-family: '8BIT WONDER', sans-serif;
+    background-image:linear-gradient(rgb(245, 245, 245), rgb(255, 192, 203), rgb(57, 51, 51));
+    color: rgb(37, 255, 8);
+    -webkit-text-stroke-color: antiquewhite;
+
+}
+
+.text {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a {
+    color: rgb(249, 249, 249);
+}
+
+a:hover {
+    color: rgb(245, 151, 183);
+}
+
+h1 {
+    animation: blinker 3s linear infinite;
+    color: rgb(255, 255, 255);
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 10%;
+    }
+  }
+
+h2 {
+    animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+    100% {
+        opacity: 80%;
+        color: rgb(255, 255, 255);
+    }
+    50% {
+        opacity: 100%;
+        color: rgb(72, 74, 196);
+    }
+}
+
+img {
+    border-radius: 10px;
+}
+
+footer {
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+}
+
+#links {
+    background-color: rgb(236, 6, 6);
+    padding: 5px;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: bold;
+    text-decoration-line: none;
+}
+
+@media (max-width: 1000px){
+    h1 {
+        background-color: rgb(255, 0, 0);
+        color: rgb(255, 255, 255);
+        padding: 20px;
+    }
+    h2 {
+        color: rgb(128, 128, 128);
+    }
+    footer {
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 0, 0);
+    }
+    #links {
+        background-color: rgb(128, 128, 128);
+    }
+};
